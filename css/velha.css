@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    background-color: #333;
+    color: #fff;
+    flex-direction: column;
+}
+
+.game-container {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 5px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    cursor: pointer;
+    border-radius: 8px;
+    color: #f09a36;
+    transition: background-color 0.3s;
+}
+
+.cell:hover {
+    background-color: #555;
+}
+
+button {
+    background-color: #f09a36;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e58925;
+}
+
+#history {
+    margin-top: 20px;
+    max-height: 150px;
+    overflow-y: auto;
+    list-style-type: none;
+    padding: 0;
+}
+
+#history li {
+    background-color: #444;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+.button-container {
+    text-align: center;
+    padding: 3%;
+}
+
+.next-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background: #764ba2;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.next-button:hover {
+    background: #764ba2;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3px);
+}
+
+.next-button:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}

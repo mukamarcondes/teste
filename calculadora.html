@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./css/calculadora.css">
+</head>
+<body>
+
+
+    <div class="button-container">
+        <a href="./cards.html" class="next-button">&rarr; Voltar Página </a>
+    </div>
+
+    <br><br>
+
+    <div class="calculator">
+        <input type="text" id="display" disabled>
+        <div class="buttons">
+            <!-- Funções Científicas -->
+            <button onclick="clearDisplay()" class="button-light">C</button>
+            <button onclick="appendOperator('(')" class="button-light">(</button>
+            <button onclick="appendOperator(')')" class="button-light">)</button>
+            <button onclick="deleteLast()" class="button-orange">⌫</button>
+            <button onclick="appendFunction('Math.sin(')">sin</button>
+            <button onclick="appendFunction('Math.cos(')">cos</button>
+            <button onclick="appendFunction('Math.tan(')">tan</button>
+            <button onclick="appendOperator('/')">÷</button>
+            <button onclick="appendFunction('Math.log10(')">log</button>
+            <button onclick="appendFunction('Math.pow(10, ')">10^</button>
+            <button onclick="appendFunction('Math.pow(')">xʸ</button>
+            <button onclick="appendOperator('*')">×</button>
+            <button onclick="appendNumber(7)">7</button>
+            <button onclick="appendNumber(8)">8</button>
+            <button onclick="appendNumber(9)">9</button>
+            <button onclick="appendOperator('-')">−</button>
+            <button onclick="appendNumber(4)">4</button>
+            <button onclick="appendNumber(5)">5</button>
+            <button onclick="appendNumber(6)">6</button>
+            <button onclick="appendOperator('+')">+</button>
+            <button onclick="appendNumber(1)">1</button>
+            <button onclick="appendNumber(2)">2</button>
+            <button onclick="appendNumber(3)">3</button>
+            <button onclick="calculate()" class="button-orange">=</button>
+            <button onclick="appendNumber(0)" class="button-zero">0</button>
+            <button onclick="appendDot()">.</button>
+            <button onclick="appendFunction('Math.sqrt(')">√</button>
+        </div>
+    </div>
+
+
+    <br><br>
+    <div class="button-container">
+        <a href="./velha.html" class="next-button">Próxima Página &rarr;</a>
+    </div>
+
+    <script src="./js/calculadora.js"></script>
+</body>
+</html>
